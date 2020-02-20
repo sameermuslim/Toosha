@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<PreferenceCategory android:title="@string/general_titel"/>-->
+    <PreferenceCategory android:title="@string/genral_title"
+        />
+    <ListPreference
+        android:defaultValue="@string/pref_persian_value"
+        android:entries="@array/pref_language_option_labels"
+        android:icon="@drawable/ic_language"
+        android:summary="@string/select_language_key"
+        android:negativeButtonText="@string/cancel_test"
+        android:entryValues="@array/pref_language_option_value"
+        android:key="@string/pref_language_key"
+        android:selectable="true"
+        android:title="@string/langauage"/>
+<PreferenceCategory android:title="@string/backup_and_restor"
+    />
+    <Preference android:title="@string/backup"
+        android:key="@string/backup"
+        android:icon="@drawable/ic_backup_black"
+        android:summary="@string/backup_current_data"
+        android:selectable="true"/>
+    <Preference android:title="@string/restore"
+        android:key="@string/restore"
+        android:icon="@drawable/ic_restore"
+        android:summary="@string/restor_your_data"
+        android:selectable="true"/>
+
+
+
+</PreferenceScreen>

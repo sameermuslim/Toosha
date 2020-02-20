@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/image_corner"
+    android:layout_gravity="bottom|center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:textStyle="bold"
+        android:src="@drawable/tasbih_back"
+        android:text="@string/add_your_custom_zeker"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/arabicText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/arabic"
+        android:maxLines="2"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/pashtoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        android:maxLines="2"
+        android:hint="@string/pashto"
+        android:inputType="textMultiLine" />
+
+
+    <EditText
+        android:id="@+id/persianText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:hint="@string/persian" />
+
+    <EditText
+        android:id="@+id/englishText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:inputType="textMultiLine"
+        android:hint="@string/english" />
+
+    <EditText
+        android:id="@+id/amountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:digits="0123456789"
+        android:fontFamily="sans-serif"
+        android:hint="@string/amount" />
+    <EditText
+        android:id="@+id/fazilatText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:maxLines="3"
+        android:gravity="top"
+        android:fontFamily="sans-serif"
+        android:hint="@string/fazilat" />
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/counter_shap_primary_color"
+        android:text="@string/add" />
+</LinearLayout>

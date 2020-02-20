@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Toosha</string>
+
+    <!-- Label for dropdown menu option if the pet's gender is unknown [CHAR LIMIT=20] -->
+    <string name="fager">Fajr</string>
+
+    <!-- Label for dropdown menu option if the pet is male [CHAR LIMIT=20] -->
+    <string name="zohor">Dhuhr</string>
+
+    <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
+    <string name="aser">Asr</string>
+
+    <string name="maghrib">Maghrib</string>
+
+
+    <string name="esha">Ishaa</string>
+
+    <string name="qaza">Qaza</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="jamat">Jamaat</string>
+    <string name="tahajod">Tahajod</string>
+    <string name="sport">Sport</string>
+    <string name="telawat">recite</string>
+    <string name="moqim">Moqim</string>
+    <string name="study">Study</string>
+    <string name="joma">Jum\'ah</string>
+    <string name="dateformater" translatable="false">%1$tA %1$tb %1$td %1$tY at %1$tI:%1$tM %1$Tp</string>
+    <string name="title_activity_evaluates">Evaluates</string>
+    <string name="action_settings">Settings</string>
+    <string name="amal_nama">Amal Nama</string>
+    <string name="fawt">Fawt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="day_night_azkar">Day Night Azkar</string>
+    <string name="morning_azkar">Morning Azkar</string>
+    <string name="evening_azkar">Evening Azkar</string>
+    <string name="mosque_azkar">Masjid Azkar</string>
+    <string name="prayer_azkar">Prayer Azkar</string>
+    <string name="sleep_azkar">Sleep Azkar</string>
+    <string name="tasbihes">Tasbihes</string>
+    <string name="amount">Amount</string>
+    <string name="period">Period</string>
+    <string name="total">Total</string>
+    <string name="tasbih">Total Tasbih</string>
+    <string name="total_azkar">Total Azkar</string>
+    <string name="persian">فارسی</string>
+    <string name="arabic">Arabic</string>
+    <string name="add">add</string>
+    <string name="j">J</string>
+    <string name="m">M</string>
+    <string name="q">Q</string>
+    <string name="pashto">Pashto</string>
+    <string name="english">English</string>
+
+
+    <string name="pref_persian_value" translatable="false">fa</string>
+    <string name="pref_pashto_value" translatable="false">ps</string>
+    <string name="pref_english_value" translatable="false">eng</string>
+
+    <string name="pref_persian_label">فارسی</string>
+    <string name="pref_pashto_label">Pashto</string>
+    <string name="pref_english_label">English</string>
+    <string name="langauage">Language</string>
+    <string name="pref_language_key" translatable="false">Language</string>
+    <string name="select_language_key">Select Language</string>
+    <string name="genral_title">General</string>
+    <string name="cancel_test">Cancel</string>
+    <string name="zeker">Zeker</string>
+    <string name="report">Report</string>
+    <string name="ok">OK</string>
+    <string name="_0">0</string>
+    <string name="custom_Tasbih">Custom</string>
+    <string name="doneAmal">Done</string>
+    <string name="notDoneAmal">Not Done</string>
+    <string name="totalAmal">total Amal</string>
+    <string name="translate">Translate</string>
+    <string name="add_your_custom_zeker">add your Custom Zeker</string>
+    <string name="required_fields">Arabic and Amount fields are required</string>
+    <string name="azkar">Azkar</string>
+    <string name="coustom_tasbih">Coustom Tasbih</string>
+
+    <string name="charity">Charity</string>
+    <string name="your_app_will_restart">Your app will restart</string>
+    <string name="prayers">Prayers</string>
+    <string name="finCount">fin</string>
+    <string name="title_activity_azkar_scrolling">AzkarScrollingActivity</string>
+    <string name="deleteing_tasbih">Deleting Tasbih</string>
+    <string name="delete">Delete</string>
+    <string name="sure_for_deleteing">Are You Sure?</string>
+    <string name="reset_text">reset</string>
+    <string name="reseting_text">Reseting</string>
+    <string name="do_you_reset">Do you want to reset?</string>
+    <string name="close">Close</string>
+    <string name="fazilat">Virtue</string>
+    <string name="restore_successful">Restore Successful</string>
+    <string name="restore_file_not_found">Restor File Not Found</string>
+    <string name="restore_failed">restor Failed</string>
+    <string name="backup_successful">Backup Successful</string>
+    <string name="backup_failed">Cackup Failed</string>
+    <string name="backup">Backup</string>
+    <string name="backup_and_restor">Backup and Restore</string>
+    <string name="backup_current_data">Backup your current data</string>
+    <string name="restore">Restore</string>
+    <string name="restor_your_data">Restore your data</string>
+    <string name="prayer_time">Prayer Time</string>
+    <string name="minut_to">Up to 15 minutes</string>
+    <string name="newـ">new</string>
+    <string name="new_desc">new Desc</string>
+
+</resources>

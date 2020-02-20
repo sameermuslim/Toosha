@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_language_option_labels">
+        <item>@string/pref_persian_label</item>
+        <item>@string/pref_pashto_label</item>
+        <item>@string/pref_english_label</item>
+    </array>
+
+    <array name="pref_language_option_value">
+        <item>@string/pref_persian_value</item>
+        <item>@string/pref_pashto_value</item>
+        <item>@string/pref_english_value</item>
+    </array>
+
+    <string-array name="filterArray">
+        <item>@string/week</item>
+        <item>@string/month</item>
+    </string-array>
+
+
+
+</resources>

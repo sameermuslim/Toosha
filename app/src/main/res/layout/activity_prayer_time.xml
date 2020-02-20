@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".PrayerTimeActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                android:id="@+id/analog_clockTime"
+                android:layout_width="0dp"
+                android:elevation="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                app:default_watchface="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fajerPrayConst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TextView
+                    android:id="@+id/zohorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/zohor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/analog_clockZohor"
+                    app:layout_constraintEnd_toEndOf="@+id/analog_clockZohor"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/analog_clockZohor"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                    android:id="@+id/analog_clockJuma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="10dp"
+                    app:default_watchface="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/analog_clockEsha"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                    android:id="@+id/analog_clockEsha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="10dp"
+                    app:default_watchface="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/analog_clockJuma"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                    android:id="@+id/analog_clockAsr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="10dp"
+                    app:default_watchface="true"
+                    app:layout_constraintBottom_toTopOf="@+id/textView25"
+                    app:layout_constraintEnd_toStartOf="@+id/analog_clockMaqhrib"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                    android:id="@+id/analog_clockFajir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="30dp"
+                    app:default_watchface="true"
+                    app:layout_constraintBottom_toTopOf="@+id/textView22"
+                    app:layout_constraintEnd_toStartOf="@+id/analog_clockZohor"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/fager"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/analog_clockFajir"
+                    app:layout_constraintEnd_toEndOf="@+id/analog_clockFajir"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/analog_clockFajir"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                    android:id="@+id/analog_clockZohor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="10dp"
+                    android:padding="15dp"
+                    app:default_watchface="true"
+                    app:layout_constraintBottom_toTopOf="@+id/textView24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/analog_clockFajir"
+                    app:layout_constraintTop_toBottomOf="@+id/zohorText" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/aser"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/analog_clockAsr"
+                    app:layout_constraintEnd_toEndOf="@+id/analog_clockAsr"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/analog_clockAsr"
+                    app:layout_constraintTop_toBottomOf="@+id/analog_clockFajir" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/maghrib"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/analog_clockMaqhrib"
+                    app:layout_constraintEnd_toEndOf="@+id/analog_clockMaqhrib"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/analog_clockMaqhrib"
+                    app:layout_constraintTop_toBottomOf="@+id/analog_clockZohor" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/esha"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/analog_clockEsha"
+                    app:layout_constraintEnd_toEndOf="@+id/analog_clockEsha"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/analog_clockEsha"
+                    app:layout_constraintTop_toBottomOf="@+id/analog_clockAsr" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="69dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/joma"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/analog_clockJuma"
+                    app:layout_constraintEnd_toEndOf="@+id/analog_clockJuma"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/analog_clockJuma"
+                    app:layout_constraintTop_toBottomOf="@+id/analog_clockMaqhrib" />
+
+                <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+                    android:id="@+id/analog_clockMaqhrib"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="10dp"
+                    app:default_watchface="true"
+                    app:layout_constraintBottom_toTopOf="@+id/textView26"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/analog_clockAsr"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>
