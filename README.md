@@ -44,8 +44,7 @@ To get started with the Muslim Prayer Tracker App, follow these steps:
 
 ## Screenshots
 
-![App Screenshot 1](screenshots/screenshot1.png)
-![App Screenshot 2](screenshots/screenshot2.png)
+![App Screenshot 1](toosha-screenshot.jpg)
 
 ## Contributing
 
